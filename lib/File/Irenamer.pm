@@ -1,9 +1,11 @@
 package File::Irenamer;
-
 ##############################################################################
-#  $Id: Irenamer.pm,v 1.2 2004/11/07 02:30:36 bheckel Exp bheckel $
+#  $Id: Irenamer.pm,v 1.3 2004/11/07 13:59:23 bheckel Exp bheckel $
 #
 #  $Log: Irenamer.pm,v $
+#  Revision 1.3  2004/11/07 13:59:23  bheckel
+#  Adjust docs
+#
 #  Revision 1.2  2004/11/07 02:30:36  bheckel
 #  Cleaned up release for initial upload to CPAN
 #
@@ -26,7 +28,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
   InteractiveRename
 );
-our $VERSION = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/o);
+our $VERSION = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/o);
 our %opts;
 
 getopts('drv', \%opts);
